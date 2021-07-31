@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   AspectRatio(
-                    aspectRatio: 18.0 / 11.0,
+                    aspectRatio: 12.0 / 7.0,
                     child: Image.asset(
                       product.assetName,
                       package: product.assetPackage,
@@ -103,9 +103,9 @@ class HomePage extends StatelessWidget {
       ),
       // TODO: Add a grid view (102)
       body: GridView.count(
-        crossAxisCount: 2,
+        crossAxisCount: 1,
         padding: EdgeInsets.all(16.0),
-        childAspectRatio: 8.0 / 9.0,
+        childAspectRatio: 8.0 / 6.5,
         // TODO: Build a grid of cards (102)
         children: _buildGridCards(context), //// List from collection of cards
       ),
